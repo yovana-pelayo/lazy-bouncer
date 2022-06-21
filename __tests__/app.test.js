@@ -74,7 +74,7 @@ describe('lazy-bouncer routes', () => {
     const res = await agent.get('/api/v1/users');
 
     expect(res.body).toEqual({
-      message: 'You do not have access to view this page',
+      message: 'You do not have access to view this page!',
       status: 403,
     });
   });
